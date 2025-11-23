@@ -167,6 +167,7 @@ This is the exact type of project hiring managers LOVE to see for:
 
 Ali Berk Canlı
 Data Analytics & NLP Projects
+
 GitHub: https://github.com/abcanli
 
 LinkedIn: https://www.linkedin.com/in/aliberkcanlı
