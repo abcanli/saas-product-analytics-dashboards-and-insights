@@ -1,20 +1,43 @@
-# SaaS Product Analytics Dashboard – Retention, Churn, Feature Usage & Revenue
+📊 SaaS Product Analytics Dashboards & Insights
 
-This project simulates a realistic **SaaS Product Analytics** stack and provides an interactive dashboard
-for exploring user behavior, retention, churn, feature usage, and revenue trends.
+Retention • Churn • Feature Usage • Revenue • Cohort Analysis (Streamlit + Plotly)
 
-It is designed as a portfolio-ready, production-style project for **Data Analysts**, **Product Analysts**,
-and **ML/NLP Analysts** who want to demonstrate strong analytics and product thinking.
+This project is a full end-to-end SaaS Product Analytics platform built with Python, Streamlit, Plotly, and Pandas.
+It simulates realistic SaaS customer behavior and provides interactive dashboards that help Product, Growth, and Data teams answer core questions such as:
 
-## 🚀 Features
+“How well are we retaining users?”
 
-- Synthetic SaaS dataset (~20k users, 18 months)
-- Subscriptions, churn, upgrades
-- Events for logins, sessions, feature usage
-- Monthly revenue (MRR, churn MRR, expansion, contraction)
-- Metric modules (DAU/MAU, cohorts, funnel, revenue)
-- Plotly visualizations
-- Streamlit dashboard with multiple pages
+“Where do customers churn?”
+
+“Which features drive engagement?”
+
+“Which plans or acquisition channels perform best?”
+
+“How is revenue evolving month-over-month?”
+
+The project includes data generation, cleaning, transformations, and dynamic dashboards — structured exactly like a real product analytics workflow.
+
+🚀 Live Features
+✔ Interactive Filters
+
+Filter dashboards by:
+
+Country
+
+Plan type (free, pro, enterprise)
+
+Acquisition channel (organic, ads, referral, partner)
+
+Date range
+
+✔ Dashboards Included
+Dashboard	Description
+Overview	High-level KPIs (active users, signups, conversions, revenue)
+Cohort Analysis	Full retention heatmap with cohort tracking
+Feature Usage	Event-based feature adoption & usage intensity
+Revenue Insights	Monthly recurring revenue, ARPU, plan-level breakdown
+
+All charts render instantly and update based on filter selections.
 
 ## 🧱 Project Structure
 
@@ -36,50 +59,114 @@ saas-product-analytics-dashboard/
 └── README.md
 ```
 
-## ⚙️ Installation
+🧪 Synthetic SaaS Dataset
 
-```bash
-git clone <your-repo-url>.git
-cd saas-product-analytics-dashboard
+The project includes a realistic, large-scale synthetic dataset that mimics:
+
+Monthly signups
+
+Feature usage events
+
+Revenue patterns
+
+Churn behavior
+
+Plan upgrades / downgrades
+
+Acquisition channels
+
+To generate data:
+
+python src/generate_data.py
+
+
+This will create fresh randomized SaaS event logs and user-level data.
+
+📈 Dashboards Preview
+🔥 Cohort Retention Heatmap
+
+Visualizes how well each signup cohort retains over time
+
+Darker blue = higher retention
+
+Fully dynamic based on filters
+
+🔥 Feature Usage Dashboard
+
+Event-level breakdown for key SaaS features
+
+Perfect for understanding activation & adoption
+
+🔥 Revenue Insights
+
+Monthly Recurring Revenue (MRR)
+
+Average Revenue Per User (ARPU)
+
+Expansion vs contraction revenue
+
+⚙️ Installation & Setup
+git clone https://github.com/abcanli/saas-product-analytics-dashboards-and-insights.git
+cd saas-product-analytics-dashboards-and-insights
 
 python -m venv venv
-# Windows:
-venv\Scripts\activate
-# macOS / Linux:
-# source venv/bin/activate
-
+venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-```
 
-## 🧪 Generate Synthetic Dataset
 
-```bash
-python src/generate_dataset.py
-```
+Then run:
 
-This will create CSVs in `data/raw/`.
-
-## 🚀 Run the Dashboard
-
-```bash
 streamlit run app.py
-```
 
-Then open the URL printed in the terminal (typically `http://localhost:8501`).
 
-## 👀 Dashboard Pages
+Open your browser at:
+👉 http://localhost:8501
 
-- **Overview**: KPIs (users, churn, activation, MRR), DAU/MAU trends, conversion funnel  
-- **Cohorts**: Signup cohorts and retention heatmap  
-- **Feature Usage**: Top features and usage by plan type  
-- **Revenue**: MRR trend, churn MRR, ARPU, simple LTV estimate  
+🧩 Built With
 
-## 🧩 Skills Demonstrated
+Python
 
-- SaaS data modeling
-- Product & growth analytics
-- Cohort & retention analysis
-- Funnel analysis
-- Revenue metrics (MRR, ARPU, LTV)
-- Data visualization with Plotly
-- Interactive dashboards with Streamlit
+Streamlit
+
+Plotly
+
+Pandas / NumPy
+
+Scikit-Learn (optional transformations)
+
+Synthetic data generation
+
+🧠 Why This Project Matters (For Your Portfolio)
+
+This project demonstrates:
+
+✔ Strong product analytics thinking
+
+(cohort analysis, retention, revenue, funnel understanding)
+
+✔ Ability to design dashboards used by real SaaS teams
+
+(Product, Growth, CX, Revenue Ops)
+
+✔ End-to-end data skills
+
+(data generation → cleaning → processing → visualization → app)
+
+✔ Streamlit + Plotly UI development
+
+(clean, modern, highly interactive dashboards)
+
+This is the exact type of project hiring managers LOVE to see for:
+📌 Data Analyst
+📌 Product Analyst
+📌 Data Scientist
+📌 Analytics Engineer
+📌 Growth Analyst roles.
+
+👤 Author
+
+Ali Berk Canlı
+Data Analytics & NLP Projects
+GitHub: https://github.com/abcanli
+
+LinkedIn: https://www.linkedin.com/in/aliberkcanlı
